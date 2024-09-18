@@ -1,0 +1,393 @@
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin:0;
+    font-family: 'Montserrat',sans-serif;
+}
+.left-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+}
+nav {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#4e878c ;
+    padding:10px;
+    margin:5px;
+}
+header nav a:hover {
+    background-color: #011627;
+    transition: 0.7s ease;
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-block:1rem;
+   
+}
+.front-content-left {
+    margin:120px;
+    padding-block:1rem;
+    font-family: 'Montserrat',sans-serif;
+   
+}
+.front-content-left h3 {
+    font-size: 35px;
+}
+.front-content-left p {
+    font-size: 20px;
+}
+.front-content-left h3 span {
+    color:#4e878c;
+}
+.front-content-left a {
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+}
+.front-content-left .content-description{
+    flex: 1 1;
+}
+aside {
+    
+    display: flex;
+    flex: 1;
+}
+aside img{
+   margin-top:80px;
+   margin-left:110px;
+   object-fit: cover;
+   object-position: center;
+   width:300px;
+}
+.flex {
+    display: flex;
+    flex: 1;
+}
+.content-down {
+    width: 100%;
+    margin:150px;
+    
+}
+.content-down h2 {
+    color:#4e878c;
+}
+.image {
+    width: 100%;
+    text-align: center;
+}
+.image img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    width:200px;
+    height:230px;
+
+}
+
+.myself article {
+    margin-top:40px;
+  margin-left:130px;
+    width: 300px;
+}
+
+.button {
+    padding:20px;
+    background-color: aquamarine;
+    margin-top:20px;
+    border-radius: 10%;
+}
+
+.workbutton{
+    margin-top:80px;
+}
+
+.workbutton a:hover {
+    color:#4e878c;
+    transition: 0.7s ease;
+}
+
+.Services{
+    width: 100%;
+    margin-top:100px;
+}
+.Services h2 {
+    font-size: 24px;
+}
+
+
+.MobileDevelopment{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-top:100px;
+    padding: 20px;
+    
+}
+
+.MobileDevelopment article{
+    width: 300px;
+    margin-left: 50px;
+}
+.MobileDevelopment img {
+    border-radius: 10px;
+}
+
+.Frontend{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.Frontend article{
+    width: 300px;
+    margin-right: 50px;
+}
+.Frontend img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.contentmob{
+    display: flex;
+}
+
+.MobileDevelopment h3 {
+   text-align: center;
+  margin-left:30px;
+}
+
+.card {
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:30px;
+    
+}
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    padding:50px;
+    background-color: #4e878c;
+    display: flex;
+    font-family: 'Montserrat',sans-serif;
+    justify-content: space-between;
+}
+
+footer h4 {
+    color:white;
+    font-size: 24px;
+}
+
+.SocialMedia ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.SocialMedia ul li a{
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+}
+.latest-project {
+    width: 100%;
+    margin-top:200px;
+
+}
+.latest-project img {
+   width:100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+
+.latest-project h3 {
+    font-size: 24px;
+}
+
+.latest-project h3 span {
+    color:#1a1b1b ;
+
+}
+
+.latest-project-flex {
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.left-project{
+    width:50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.right-project {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left:80px;
+}
+
+.right-project-content{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top:10px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-block: 0.5rem;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        background-color: #1a1b1b;
+    }
+
+    .left-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .left-nav a, .right-nav a {
+        margin: 5px 0;
+        padding: 10px;
+       
+    }
+
+    .flex {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .front-content-left {
+        margin: 40px;
+        padding: 0;
+    }
+
+    .front-content-left h3 {
+        font-size: 28px;
+    }
+
+    .front-content-left p {
+        font-size: 18px;
+    }
+    aside {
+        justify-content: center;
+    }
+
+    aside img {
+        margin-top: 40px;
+        margin-left: 0;
+        width: 60%;
+    }
+
+    .content-down {
+        margin: 50px 0;
+        padding: 0;
+        width: 80%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .Services {
+        margin-top: 50px;
+        padding: 0;
+     
+    }
+
+    .Services h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .Services img {
+        width: 50%;
+    }
+
+    .MobileDevelopment, .Frontend {
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px;
+
+    }
+
+    .MobileDevelopment img, .Frontend img {
+       
+        width: 100%;
+    }
+
+    .contentmob {
+        flex-direction: column;
+    }
+
+    .latest-project-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-project, .right-project {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-project-content {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer h4 {
+        font-size: 20px;
+    }
+
+    .SocialMedia ul {
+        justify-content: center;
+        gap: 10px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+   .latest-project h3 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+}
